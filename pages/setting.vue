@@ -7,7 +7,7 @@
         <v-card-text>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione explicabo odit totam dicta consectetur accusamus, eius natus. Dicta, dolor quisquam porro deleniti quaerat quibusdam perspiciatis expedita nulla alias libero aperiam soluta modi voluptates veniam magni ab. Doloribus accusantium velit similique nemo magnam dolorum dicta repellat, cumque alias voluptatibus vel architecto?</p>
         </v-card-text>
-        <book v-for="(book, i) in books" :key="i" v-model="books"></book>
+        <book v-for="(book, i) in books" :key="i" :book="book" :book_index="i"></book>
       </v-card>
     </v-flex>
   </v-layout>
@@ -25,21 +25,21 @@ export default {
   data() {
     return {
       books: {
-        one: {
+        1: {
           episode_1: {
-            title: "At the Crossroads",
-            src: "https://cdn.vuetifyjs.com/images/cards/store.jpg"
+            title: "1: At the Crossroads",
+            src: "./assets/img/1.png"
           },
           episode_2: {
-            title: "Into the Abyss",
+            title: "2: Into the Abyss",
             src: "https://cdn.vuetifyjs.com/images/cards/store.jpg"
           },
           episode_3: {
-            title: "Against All Shadows",
-            src: "https://cdn.vuetifyjs.com/images/cards/store.jpg"
+            title: "3: Against All Shadows",
+            src: "./assets/img/3.png"
           }
         },
-        two: {
+        2: {
           episode_1: {
             title: "in progress",
             src: "https://cdn.vuetifyjs.com/images/cards/store.jpg"
@@ -53,7 +53,7 @@ export default {
             src: "https://cdn.vuetifyjs.com/images/cards/store.jpg"
           }
         },
-        three: {
+        3: {
           episode_1: {
             title: "in progress",
             src: "https://cdn.vuetifyjs.com/images/cards/store.jpg"

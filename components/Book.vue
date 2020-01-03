@@ -1,9 +1,9 @@
 <template>
   <v-container>
     <v-card hover shaped>
-      <v-card-title class="title_book"># books.one.episode_1.title</v-card-title>
+      <v-card-title class="title_book">Book {{book_index}}</v-card-title>
       <v-row justify="space-between">
-        <episode class="episode"></episode>
+        <episode v-for="(episode, i) in book" :key="i" :episode="episode" class="episode"></episode>
       </v-row>
     </v-card>
   </v-container>
@@ -13,6 +13,7 @@
 import Episode from "~/components/Episode.vue";
 
 export default {
+  props: ["book", "book_index"],
   components: {
     Episode
   }
