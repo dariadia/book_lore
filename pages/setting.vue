@@ -28,11 +28,11 @@ export default {
         1: {
           episode_1: {
             title: "1: At the Crossroads",
-            src: "./assets/img/1.png"
+            src: "~/assets/img/1.png"
           },
           episode_2: {
             title: "2: Into the Abyss",
-            src: "https://cdn.vuetifyjs.com/images/cards/store.jpg"
+            src: "./assets/img/2.png"
           },
           episode_3: {
             title: "3: Against All Shadows",
