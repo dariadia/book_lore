@@ -2,7 +2,14 @@
   <v-app dark>
     <v-navigation-drawer v-model="drawer" :mini-variant="miniVariant" :clipped="clipped" fixed app>
       <v-list>
-        <v-list-item v-for="(item, i) in items" :key="i" :to="item.to" router exact>
+        <v-list-item
+          @click.stop="drawer = !drawer"
+          v-for="(item, i) in items"
+          :key="i"
+          :to="item.to"
+          router
+          exact
+        >
           <v-list-item-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
@@ -13,6 +20,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar
+      @click.stop="drawer = !drawer"
       :clipped-left="clipped"
       :collapse="!collapseOnScroll"
       :collapse-on-scroll="collapseOnScroll"
@@ -23,14 +31,12 @@
       <v-toolbar-title v-text="title" />
       <v-spacer />
     </v-app-bar>
-    <v-sheet id="scrolling-techniques-6" class="overflow-y-auto" max-height="600">
-      <v-content>
-        <v-container>
-          <nuxt />
-        </v-container>
-      </v-content>
+    <v-sheet id="scrolling-techniques-6" class="overflow-y-auto" max-height="650">
+      <v-container>
+        <nuxt />
+      </v-container>
     </v-sheet>
-    <v-footer :fixed="fixed" app>
+    <v-footer fixed app>
       <span>&copy; dariadia 2020</span>
     </v-footer>
   </v-app>
@@ -52,23 +58,21 @@ export default {
         },
         {
           icon: "mdi-chart-bubble",
-          title: "Start Here: Setting",
+          title: "Start Here: Series",
           to: "/setting"
         },
         {
           icon: "mdi-chart-bubble",
           title: "Characters",
-          to: "#"
+          to: "/characters"
         },
         {
           icon: "mdi-chart-bubble",
           title: "Realms : Dimensions : Parallels",
-          to: "#"
+          to: "/realms"
         }
       ],
       miniVariant: false,
-      right: true,
-      rightDrawer: false,
       title: "Cardverse Lore"
     };
   }

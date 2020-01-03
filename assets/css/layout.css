@@ -17,16 +17,10 @@ v-navigation-drawer {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.rotate {
-    transform: rotate(-90deg);
-    /* Safari */
-    -webkit-transform: rotate(-90deg);
-    /* Firefox */
-    -moz-transform: rotate(-90deg);
-    /* IE */
-    -ms-transform: rotate(-90deg);
-    /* Opera */
-    -o-transform: rotate(-90deg);
-    /* Internet Explorer */
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+[class*="title_"] {
+    line-height: 50px;
+}
+
+[class*="_book"] {
+    color: rgb(107, 250, 202);
 }
