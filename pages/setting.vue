@@ -8,6 +8,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione explicabo odit totam dicta consectetur accusamus, eius natus. Dicta, dolor quisquam porro deleniti quaerat quibusdam perspiciatis expedita nulla alias libero aperiam soluta modi voluptates veniam magni ab. Doloribus accusantium velit similique nemo magnam dolorum dicta repellat, cumque alias voluptatibus vel architecto?</p>
         </v-card-text>
         <book v-for="(book, i) in books" :key="i" :book="book" :book_index="i"></book>
+        <v-container style="height: 30px;"></v-container>
       </v-card>
     </v-flex>
   </v-layout>

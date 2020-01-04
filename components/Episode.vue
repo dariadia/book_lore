@@ -3,7 +3,7 @@
     <v-expansion-panel class="panel_episode">
       <v-expansion-panel-header>
         <v-col justify="space-between">
-          <v-img height="300" width="200" :src="episode.src" />
+          <v-img height="300" width="200" :src="episode.src" :alt="episode.title" />
           <h3 class="title_episode">Episode {{episode_index}}</h3>
           <h3 class="title_episode">{{episode.title}}</h3>
         </v-col>

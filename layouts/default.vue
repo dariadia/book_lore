@@ -53,22 +53,22 @@ export default {
       fixed: false,
       items: [
         {
-          icon: "mdi-apps",
+          icon: "mdi-auto-fix",
           title: "Welcome",
           to: "/"
         },
         {
-          icon: "mdi-chart-bubble",
+          icon: "mdi-bookshelf",
           title: "Start Here: Series",
           to: "/setting"
         },
         {
-          icon: "mdi-chart-bubble",
+          icon: "mdi-account-supervisor-outline",
           title: "Characters",
           to: "/characters"
         },
         {
-          icon: "mdi-chart-bubble",
+          icon: "mdi-map-search-outline",
           title: "Realms : Dimensions : Parallels",
           to: "/realms"
         }
