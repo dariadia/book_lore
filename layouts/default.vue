@@ -20,6 +20,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar
+      style="z-index:3"
       @click.stop="drawer = !drawer"
       :clipped-left="clipped"
       :collapse="!collapseOnScroll"
