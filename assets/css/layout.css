@@ -19,6 +19,11 @@ v-navigation-drawer {
 
 [class*="title_"] {
     line-height: 50px;
+    text-transform: capitalize;
+}
+
+[class*="_character-card"] {
+    font-family: fantasy;
 }
 
 [class*="_book"] {

@@ -75,12 +75,26 @@ export default {
             name: "Lars Jansen",
             power: "creation"
           },
-          "High Priestess": { img: "" },
-          Empress: { img: "", name: "Alisa Enisa Hajrovič" },
-          Emperor: { img: "", name: "Gleb Kubitschek", power: "destruction" },
-          Hierophant: { img: "" },
+          "High Priestess": {
+            img:
+              "https://cdn2.vectorstock.com/i/1000x1000/01/66/businesswoman-character-avatar-icon-vector-12800166.jpg"
+          },
+          Empress: {
+            img: "",
+            name: "Alisa Enisa Hajrovič"
+          },
+          Emperor: {
+            img:
+              "https://cdn.iconscout.com/icon/free/png-256/avatar-367-456319.png",
+            name: "Gleb Kubitschek",
+            power: "destruction"
+          },
+          Hierophant: {
+            img:
+              "https://cdn.iconscout.com/icon/free/png-256/avatar-372-456324.png"
+          },
           Lovers: { img: "" },
-          Chariot: { img: "" },
+          Chariot: { img: "https://i.ibb.co/VVPwt9M/magician.jpg" },
           Strength: { img: "" },
           Hermit: { img: "" },
           "Wheel of Fortune": { img: "" },
@@ -96,15 +110,32 @@ export default {
           Judgement: { img: "", name: "Maze Eaton Harper" },
           World: { img: "", name: "World", power: "portals" }
         },
-        wands: {},
-        swords: {},
+        wands: {
+          King: {
+            img: "",
+            name: "Theodore Jansen",
+            power: "scepter: controls life energy of all the Wands"
+          },
+          Queen: { img: "", name: "Sara" }
+        },
+        swords: {
+          King: {
+            img: "",
+            name: "Theodore Jansen",
+            power: "sword: can slash through anything"
+          }
+        },
         pentacles: {},
         cups: {}
       },
       book2_characters: {
         "major arcana": {
           Fool: { img: "" },
-          Magician: { img: "", name: "Lars Jansen", power: "creation" },
+          Magician: {
+            img: "https://i.ibb.co/VVPwt9M/magician.jpg",
+            name: "Lars Jansen",
+            power: "creation"
+          },
           "High Priestess": { img: "" },
           Empress: { img: "", name: "Alisa Enisa Hajrovič" },
           Emperor: { img: "", name: "Gleb Kubitschek", power: "destruction" },
@@ -134,7 +165,11 @@ export default {
       book3_characters: {
         "major arcana": {
           Fool: { img: "", name: "Cassandra Murphy" },
-          Magician: { img: "" },
+          Magician: {
+            img: "https://i.ibb.co/VVPwt9M/magician.jpg",
+            name: "Lars Jansen",
+            power: "creation"
+          },
           "High Priestess": { img: "" },
           Empress: { img: "" },
           Emperor: { img: "" },
