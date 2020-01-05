@@ -1,6 +1,9 @@
 # book_lore
 
 > a guide to characters and worlds from the book series. Built with Nuxt.js
+![website page](https://ibb.co/vP0XrjC)
+![website page](https://ibb.co/DbQqJ2P)
+
 
 ## Build Setup
 
